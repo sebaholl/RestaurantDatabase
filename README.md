@@ -1,46 +1,35 @@
-# Restaurant Database
-Restaurant Booking Database
+# Restaurant Booking Database
 
 A MySQL database for managing restaurants, dining tables, customers, and bookings.
 
-Tables
+## Tables
 
-restaurant_manager
+- `restaurant_manager`
+- `restaurant`
+- `dining_table`
+- `customer`
+- `booking`
 
-restaurant
+## Relationships
 
-dining_table
+- One manager manages one restaurant.
+- One restaurant has many dining tables.
+- One customer can make many bookings.
+- One dining table can have many bookings.
+- Each booking connects one customer with one dining table.
 
-customer
-
-booking
-
-Relationships
-
-One manager manages one restaurant.
-
-One restaurant has many dining tables.
-
-One customer can make many bookings.
-
-One dining table can have many bookings.
-
-Each booking connects one customer with one dining table.
-
-Diagrams
+## Diagrams
 
 The repository includes:
 
-er_diagram.png
+- `er_diagram.png`
+- `rdm_diagram.png`
 
-rdm_diagram.png
-
-Normalization
+## Normalization
 
 The database is normalized to Third Normal Form to reduce duplicated data and keep information in the correct tables.
 
-SQL files
+## SQL files
 
-restaurant_database.sql creates the database tables and inserts test data.
-
-required_queries.sql contains the three required queries.
+- `restaurant_database.sql` creates the database tables and inserts test data.
+- `required_queries.sql` contains the three required queries.
